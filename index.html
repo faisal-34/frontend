@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luganda Translation API</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Luganda Translation API</h1>
+
+    <label for="text">Text to Translate:</label>
+    <input type="text" id="text" placeholder="Enter English or Luganda" />
+
+    <label for="direction">Direction:</label>
+    <select id="direction">
+      <option value="en-lg">English → Luganda</option>
+      <option value="lg-en">Luganda → English</option>
+    </select>
+
+    <button onclick="translateText()">Translate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
